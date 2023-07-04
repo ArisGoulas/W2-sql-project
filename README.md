@@ -11,18 +11,25 @@ Your mission is to create and populate an appropriate database with many coding 
 
 ---
 
-## Suggested Steps in the Project:
+## Project path
 
-- A basic python notebook for obtaining data on competitor schools by using [SwitchUp](https://www.switchup.org/) was provided
+- A basic python notebook for obtaining data on competitor schools by using [SwitchUp](https://www.switchup.org/) was provided.
+  - `regex`, `pandas` and `requests` (for making API calls, something tells me this will come back to us in the future...) were used
+  - The data cleaning procedure was adapted to the project needs
 
 - The initial notebook contained info on 3 schools (including Ironhack). The first task was to enrich it with a wider variety of schools
   - The top-25 schools based on their total number of reviews in the portal of switchup was used to populate the database further 
 
-- The 5 obtained dataframes (comments, locations, courses, badges, schools) were imported to a SQL database 
+- The 5 obtained dataframes (comments, locations, courses, badges, schools) were imported to a SQL database.
+  - `mysql.connector` and `sqlalchemy` were used to connect Python to mySQL and create the engine to be seeded and populated with data
+  - The ERD of the database is included below, showing the primary keys selected (comment_id, school_id and location_id)
+  - In addition, school_id was used as foreign key for all 5 tables
 
-- Take a look at the obtained dataframes. What dimensions do you have? what keys do you have? how could the different dataframes be connected?
+  ![ERD cli](cli_ERD.png)
 
-- Go back to the drawing board and try to create an entity relationship diagram for tables available
+- Once everything seemed to be in place, some basic queries were made using `mySQL`
+
+
 
 - Once you have the schemas you want, you will need to:
   - create the suitable SQL queries to create the tables and populate them
