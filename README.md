@@ -5,9 +5,6 @@
 ## Overview
 
 The AAA data analytics & consultancy firm comprises of three data analysts ([Aris Goulas](https://github.com/ArisGoulas), [Alvaro Gracio](https://github.com/alvarogracio), [Afonso Macedo](https://github.com/Afonso-Macedo)). They were recently hired by Ironhack, Portugal to perform an Analytics Consulting Project entitled: competitive landscape of Ironhack (cli).
-You were hired by Ironhack to perform an Analytics Consulting Project entitled: competitive landscape.
-
-Your mission is to create and populate an appropriate database with many coding schools that are our competition, as well as design an suitable queries that answer business questions of interest (to be defined by you)
 
 ---
 
@@ -25,14 +22,12 @@ Your mission is to create and populate an appropriate database with many coding 
   - The ERD of the database is included below, showing the primary keys selected (comment_id, school_id and location_id)
   - In addition, school_id was used as foreign key for all 5 tables
 
-  ![ERD cli](cli_ERD.png)
-
 - Once everything seemed to be in place, some basic queries were made using `mySQL`
   - First, the competitive landscape was mapped, categorizing the competitors of Ironhack based on two criteria in:
     - All-rounder (if the schools offered more than 2 courses, namely on Data Analytics, UX/UI, Web Development and Cybersecurity) or Focused (if the offered 2 or 1 courses); schools that for some (parsing) reasons appeared to offer 0 courses were marked as Passive
     - Direct (if their size, estimated by the number of reviews received, was similar to Ironhack; namely from 40% less to more than Ironhack's reviews), Prospects (for reviews equal to 40-60% less compared to Ironhack) and Food (for stakeholders with a small number of reviews)
    
-  ![landscape cli](cli_landscape.png)
+  ![landscape cli](cli_landscape.jpg)
 
 - In total the landscape comprises of:
   - 2 All-rounder, Direct competitors (Springboard & Udacity)
@@ -51,5 +46,4 @@ Your mission is to create and populate an appropriate database with many coding 
 - Finally, the trend of score and reviews over time was analyzed for two competitors of different nature (Le Wagon and Thinkful) indicating
   - A potential red flag for Ironhack's late score performance
   - The possibility that the ranking portal might be underperforming as compared to the past
- 
-  ![landscape cli](cli_landscape.png)
+
