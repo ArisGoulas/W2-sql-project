@@ -4,52 +4,36 @@
 
 ## Overview
 
-The AAA data analytics & consultancy firm comprises of three data analysts ([Aris Goulas](https://github.com/ArisGoulas), [Alvaro Gracio](https://github.com/alvarogracio), [Afonso Macedo](https://github.com/Afonso-Macedo)). They were recently hired by Ironhack, Portugal to perform an Analytics Consulting Project entitled: competitive landscape of Ironhack (cli).
 You were hired by Ironhack to perform an Analytics Consulting Project entitled: competitive landscape.
 
 Your mission is to create and populate an appropriate database with many coding schools that are our competition, as well as design an suitable queries that answer business questions of interest (to be defined by you)
 
 ---
 
-## Project path
+## Suggested Steps in the Project:
 
-- A basic python notebook for obtaining data on competitor schools by using [SwitchUp](https://www.switchup.org/) was provided.
-  - `regex`, `pandas` and `requests` (for making API calls, something tells me this will come back to us in the future...) were used
-  - The data cleaning procedure was adapted to the project needs
+- Read this notebook and understand each function. Comment the code appropriately
 
-- The initial notebook contained info on 3 schools (including Ironhack). The first task was to enrich it with a wider variety of schools
-  - The top-25 schools based on their total number of reviews in the portal of switchup was used to populate the database further 
+- Populate the list of schools with a wider variety of schools (how are you going to get the school ID?)
 
-- The 5 obtained dataframes (comments, locations, courses, badges, schools) were imported to a SQL database.
-  - `mysql.connector` and `sqlalchemy` were used to connect Python to mySQL and create the engine to be seeded and populated with data
-  - The ERD of the database is included below, showing the primary keys selected (comment_id, school_id and location_id)
-  - In addition, school_id was used as foreign key for all 5 tables
+- Take a look at the obtained dataframes. What dimensions do you have? what keys do you have? how could the different dataframes be connected?
 
-  ![ERD cli](cli_ERD.png)
+- Go back to the drawing board and try to create an entity relationship diagram for tables available
 
-- Once everything seemed to be in place, some basic queries were made using `mySQL`
-  - First, the competitive landscape was mapped, categorizing the competitors of Ironhack based on two criteria in:
-    - All-rounder (if the schools offered more than 2 courses, namely on Data Analytics, UX/UI, Web Development and Cybersecurity) or Focused (if the offered 2 or 1 courses); schools that for some (parsing) reasons appeared to offer 0 courses were marked as Passive
-    - Direct (if their size, estimated by the number of reviews received, was similar to Ironhack; namely from 40% less to more than Ironhack's reviews), Prospects (for reviews equal to 40-60% less compared to Ironhack) and Food (for stakeholders with a small number of reviews)
-   
-  ![landscape cli](cli_landscape.png)
+- Once you have the schemas you want, you will need to:
+  - create the suitable SQL queries to create the tables and populate them
+  - run these queries using the appropriate Python connectors
 
-- In total the landscape comprises of:
-  - 2 All-rounder, Direct competitors (Springboard & Udacity)
-  - 4 Focused, Direct competitors (Le Wagon, SheCodes, General Assembly & Design Lab)
-  - 7 Prospect competitors
-  - 8 Food competitors
-  - 4 Passive competitors
+- Bonus: How will this datamodel be updated in the future? Please write auxiliary functions that test the database for data quality issues. For example: how could you make sure you only include the most recent comments when you re-run the script?
 
-- Based on their metrics, the identified competitors were sorted on top-5, in terms of:
-  - The number of courses offered (Ironhack offers 4): Springboard, Udacity, Thinkful & The Tech Academy (all 3)
-  - Reviews (Ironhack had 1265): Le Wagon (+110%), Springboard ((+20%), Udacity and SheCodes (+10%)
-  - Score (Ironhack had 4.74 ranking #09 overall): Le Capsule (4.96), Product Gym (4.94), Le Wagon (4.92), Codesmith (4.91) & SheCodes
+### Suggested Deliverables
 
-- Some "food-for-though" was provided to the Ironhack decision makers!
+- 5-6 minute presentation of data model created, decision process and business analysis proposed
 
-- Finally, the trend of score and reviews over time was analyzed for two competitors of different nature (Le Wagon and Thinkful) indicating
-  - A potential red flag for Ironhack's late score performance
-  - The possibility that the ranking portal might be underperforming as compared to the past
- 
-  ![landscape cli](cli_landscape.png)
+- exported .sql file with the final schema
+
+- Supporting python files used to generate all logic
+
+- High level documentation explaining tables designed and focusing on update methods
+
+Crucial hint: check out the following tutorial: https://www.dataquest.io/blog/sql-insert-tutorial/
