@@ -28,6 +28,11 @@ Your mission is to create and populate an appropriate database with many coding 
   ![ERD cli](cli_ERD.png)
 
 - Once everything seemed to be in place, some basic queries were made using `mySQL`
+  - First, the competitive landscape was mapped, categorizing the competitors of Ironhack based on two criteria in:
+    - All-rounder (if the schools offered more than 2 courses, namely on Data Analytics, UX/UI, Web Development and Cybersecurity) or Focused (if the offered 2 or 1 courses); schools that for some (parsing) reasons appeared to offer 0 courses were marked as "Passive"
+    - Direct (if their size, estimated by the number of reviews received, was similar to Ironhack; namely from 40% less to more than Ironhack's reviews), Prospects (for reviews equal to 40-60% less compared to Ironhack) and "Food" (for stakeholders with a small number of reviews)
+   
+  ![landscape cli](cli_landscape.png)
 
 
 
