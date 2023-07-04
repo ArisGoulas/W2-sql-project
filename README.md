@@ -48,3 +48,14 @@ The AAA data analytics & consultancy firm comprises of three data analysts ([Ari
    - A potential red flag for Ironhack's late score performance
    - The possibility that the ranking portal might be underperforming as compared to the past
 
+---
+
+## How to use
+
+1. Clone this repo in your GitHub
+
+2. Navigate to `your-code` and launch `sql_project_cli` (i used `jupyter notebook` but feel free to use your favorite editor)
+   - watch-out: as switch.org changes the interface, it might be that some of the claims here will not be valid anymore; be critical about any of the results!
+   - the script will generate and populate a database called cli; you need to modify in the connector details the path and password for your version of SQL
+
+3.  This database is built for mySQL, therefore using it you should be able to execute the queries `of cli_queries.sql`
