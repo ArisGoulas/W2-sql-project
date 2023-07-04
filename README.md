@@ -21,6 +21,8 @@ The AAA data analytics & consultancy firm comprises of three data analysts ([Ari
   - `mysql.connector` and `sqlalchemy` were used to connect Python to mySQL and create the engine to be seeded and populated with data
   - As primary keys we selected: comment_id, school_id and location_id, while, in addition school_id was used as a foreign key as well
 
+## Outcomes
+
 - Once everything seemed to be in place, some basic queries were made using `mySQL`
   - First, the competitive landscape was mapped, categorizing the competitors of Ironhack based on two criteria in:
     - All-rounder (if the schools offered more than 2 courses, namely on Data Analytics, UX/UI, Web Development and Cybersecurity) or Focused (if the offered 2 or 1 courses); schools that for some (parsing) reasons appeared to offer 0 courses were marked as Passive
@@ -28,21 +30,21 @@ The AAA data analytics & consultancy firm comprises of three data analysts ([Ari
    
   ![landscape cli](cli_landscape.jpg)
 
-- In total the landscape comprises of:
+:fishing_pole_and_fish: In total the landscape comprises of:
   - 2 All-rounder, Direct competitors (Springboard & Udacity)
   - 4 Focused, Direct competitors (Le Wagon, SheCodes, General Assembly & Design Lab)
   - 7 Prospect competitors
   - 8 Food competitors
   - 4 Passive competitors
 
-- Based on their metrics, the identified competitors were sorted on top-5, in terms of:
+:five: Based on their metrics, the identified competitors were sorted on top-5, in terms of:
   - The number of courses offered (Ironhack offers 4): Springboard, Udacity, Thinkful & The Tech Academy (all 3)
   - Reviews (Ironhack had 1265): Le Wagon (+110%), Springboard ((+20%), Udacity and SheCodes (+10%)
   - Score (Ironhack had 4.74 ranking #09 overall): Le Capsule (4.96), Product Gym (4.94), Le Wagon (4.92), Codesmith (4.91) & SheCodes
 
-- Some "food-for-though" was provided to the Ironhack decision makers!
+:ocean: Some "food-for-though" was provided to the Ironhack decision makers!
 
-- Finally, the trend of score and reviews over time was analyzed for two competitors of different nature (Le Wagon and Thinkful) indicating
+:hourglass: Finally, the trend of score and reviews over time was analyzed for two competitors of different nature (Le Wagon and Thinkful) indicating
   - A potential red flag for Ironhack's late score performance
   - The possibility that the ranking portal might be underperforming as compared to the past
 
