@@ -4,6 +4,7 @@
 
 ## Overview
 
+The AAA data analytics & consultancy firm comprises of three data analysts ([Aris Goulas](https://github.com/ArisGoulas), [Alvaro Gracio](https://github.com/alvarogracio), [Afonso Macedo](https://github.com/Afonso-Macedo)). They were recently hired by Ironhack, Portugal to perform an Analytics Consulting Project entitled: competitive landscape of Ironhack (cli).
 You were hired by Ironhack to perform an Analytics Consulting Project entitled: competitive landscape.
 
 Your mission is to create and populate an appropriate database with many coding schools that are our competition, as well as design an suitable queries that answer business questions of interest (to be defined by you)
@@ -12,9 +13,12 @@ Your mission is to create and populate an appropriate database with many coding 
 
 ## Suggested Steps in the Project:
 
-- Read this notebook and understand each function. Comment the code appropriately
+- A basic python notebook for obtaining data on competitor schools by using [SwitchUp](https://www.switchup.org/) was provided
 
-- Populate the list of schools with a wider variety of schools (how are you going to get the school ID?)
+- The initial notebook contained info on 3 schools (including Ironhack). The first task was to enrich it with a wider variety of schools
+  - The top-25 schools based on their total number of reviews in the portal of switchup was used to populate the database further 
+
+- The 5 obtained dataframes (comments, locations, courses, badges, schools) were imported to a SQL database 
 
 - Take a look at the obtained dataframes. What dimensions do you have? what keys do you have? how could the different dataframes be connected?
 
