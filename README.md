@@ -19,8 +19,7 @@ The AAA data analytics & consultancy firm comprises of three data analysts ([Ari
 
 - The 5 obtained dataframes (comments, locations, courses, badges, schools) were imported to a SQL database.
   - `mysql.connector` and `sqlalchemy` were used to connect Python to mySQL and create the engine to be seeded and populated with data
-  - The ERD of the database is included below, showing the primary keys selected (comment_id, school_id and location_id)
-  - In addition, school_id was used as foreign key for all 5 tables
+  - As primary keys we selected: comment_id, school_id and location_id, while, in addition school_id was used as a foreign key as well
 
 - Once everything seemed to be in place, some basic queries were made using `mySQL`
   - First, the competitive landscape was mapped, categorizing the competitors of Ironhack based on two criteria in:
